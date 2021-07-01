@@ -2,4 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablets {
+      align-items: baseline;
+      margin-bottom: 110px;
+    }
+}
+
+.header__menu {
+  @include tablets {
+    display: none;
+  }
 }

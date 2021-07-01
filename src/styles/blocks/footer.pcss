@@ -3,11 +3,19 @@
   padding: 88px 0;
   color: rgba(#fff, .3);
   line-height: 1.7;
+
+  @include phones {
+    padding: 53px 0 90px 0;
+  }
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .footer__copyright {
@@ -17,6 +25,11 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
+
+  @include phones {
+    width: 100%;
+    align-items: flex-start;
+  }
 }
 
 .footer__copyright-col {
@@ -24,8 +37,15 @@
 }
 
 .footer__copyright-userinfo {
-  width: 41%;
+  width: 50%;
   padding-top: 9px;
+
+  @include phones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .footer__copyright-name {
@@ -35,6 +55,7 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 34px;
+    width: 50%;
 }
 
 .footer__copyright-year {
@@ -50,25 +71,60 @@
 .footer__data {
   width: 66%;
   padding-top: 7px;
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .footer__data-menu {
   margin-bottom: 60px;
 
+  @include phones {
+    margin-bottom: 30px;
+  }
+
   .menu__list {
     justify-content: flex-start;
+
+    @include phones {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 
   .menu__item {
     margin-right: 6%;
+
+    @include tablets {
+      margin-right: 14%;
+      margin-bottom: 20px;
+    }
   }
 }
 
 .footer__data-content {
   display: flex;
   justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .footer__data-col {
   width: 46%;
+
+  @include phones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__data-socials {
+  @include phones {
+    margin-bottom: 30px;
+  }
 }

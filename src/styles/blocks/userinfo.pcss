@@ -1,14 +1,31 @@
 .userinfo {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+    text-align: center;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+  }
 }
+
 
 .userinfo__title {
   font-size: 18px;
   color: rgba($text-color, .4);
   font-weight: 600;
   margin-bottom: 20px;
+  margin-right: 5%;
+  
+  @include tablets {
+    text-align: center;
+    margin-right: 0;
+  }
+  @include phones {
+    font-size: 14px;
+    padding: 0 10%;
+  }
 }
 
 .userinfo__name {
@@ -16,4 +33,8 @@
   font-size: 72px;
   line-height: 1;
   flex-basis: 400px;
+
+  @include phones {
+    font-size: 36px;
+  }
 }

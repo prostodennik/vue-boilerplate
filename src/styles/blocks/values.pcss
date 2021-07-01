@@ -1,5 +1,9 @@
 .values {
   margin-bottom: 114px;
+
+  @include tablets {
+    margin-bottom: 450px;
+  }
 }
 
 .values__container {
@@ -14,7 +18,16 @@
     bottom: 5%;
     height: 79%;
     width: 69%;
-    left: -35%;
+    left: -25%;
+
+    @include tablets {
+    bottom: -300px;
+    height: 250px;
+    width: 280px;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    }
   }
 }
 
@@ -26,11 +39,26 @@
   margin-bottom: 82px;
   display: flex;
   justify-content: center;
+
+  @include tablets {
+    margin-bottom: 50px;
+  }
 }
 
 .values__title-container {
-  width: 45%;
+  width: 50%;
   margin-left: 6%;
+
+  @include tablets {
+    width: 65%;
+    text-align: center;
+  }
+
+  @include phones {
+    width: 100%;
+    text-align: left;
+    white-space: break-spaces;
+  }
 }
 
 .values__title-text {
@@ -48,8 +76,16 @@
 .values__widget {
   display: flex;
   justify-content: flex-end;
+
+  @include tablets {
+    display: block;
+  }
 }
 
 .values__widget-container {
-  width: 66%;
+  width: 70%;
+
+  @include tablets {
+    width: 100%;
+  }
 }

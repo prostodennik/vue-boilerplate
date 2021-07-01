@@ -2,11 +2,20 @@
   display: flex;
   align-items: center;
   margin-bottom: 95px;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .reviews__title.section-title {
   margin-bottom: 0;
   margin-right: 10%;
+
+  @include phones {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
 
 .reviews__buttons {
@@ -44,6 +53,10 @@
 .reviews__content {
   overflow: hidden;
   display: flex;
+
+  @include tablets {
+    justify-content: space-around;
+  }
 }
 
 .reviews__content-wrapper {
@@ -57,4 +70,8 @@
   flex-shrink: 0;
   padding-right: 30px;
   width: 50%;
+
+  @include tablets {
+        width: 40%;
+  }
 }

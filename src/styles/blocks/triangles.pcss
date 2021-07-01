@@ -8,8 +8,16 @@
   }
 
   &_bottom {
-    margin-bottom: -90px;
-    height: 90px;
+    margin-bottom: -110px;
+    height: 110px;
+
+    @include tablets {
+      margin-bottom: -100px;
+    }
+    @include phones {
+      margin-bottom: -145px;
+      transform: rotate(1deg);
+    }
   }
 }
 

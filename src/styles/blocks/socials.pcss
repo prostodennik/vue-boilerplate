@@ -1,5 +1,9 @@
 .socials {
     display: flex;
+
+    @include phones {
+        display: none;
+    }
 }
 
 .socials__icon {
@@ -14,6 +18,13 @@
 
     &_footer:hover {
         fill: #FF9A00;
+    }
+
+    &_footer {
+        @include phones {
+        width: 50px;
+        height: 50px
+        }
     }
 }
 

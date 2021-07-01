@@ -6,10 +6,18 @@
 
 .contacts__about {
   margin-bottom: 190px;
+
+  @include phones {
+    margin-bottom: 58px;
+  }
 }
 
 .contacts__container {
   padding-right: 26%;
+
+  @include tablets {
+    padding-right: 0;
+  }
 }
 
 .contacts__form {

@@ -2,6 +2,11 @@
   display: flex;
   padding: 169px 5% 268px;
   justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+    padding: 0 0 130px 0;
+  } 
 }
 
 .about__user-text {
@@ -14,6 +19,10 @@
 
 .about__user {
   width: 36%;
+
+  @include phones {
+    width: 100%
+  }
 }
 
 .about__desc {
@@ -39,6 +48,10 @@
   font-size: 36px;
   margin-bottom: 30px;
   color: $text-color;
+
+  @include phones {
+    width: 50%;
+  }
 }
 
 .about__text-info {
