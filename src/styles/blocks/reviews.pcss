@@ -29,27 +29,41 @@
   position: relative;
   border-radius: 50%;
   margin-right: 30px;
+  transition: .5s;
 
   &:last-child {
     margin-right: 0;
   }
-  &:before {
-    content: "";
-    width: 8px;
-    height: 10px;
-    display: block;
-    background: svg-load('arrow-down.svg', fill=$text-color) center center / contain no-repeat;
+
+  &_prev-svg {
+    width: 30%;
+    transform: rotate(-180deg);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
   }
-  &_prev {
-    &:before {
-      transform: translate(-50%, -50%) rotate(-180deg);
-    }
+
+  &_next-svg {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  &:hover {
+    fill: #5500f2;
+    color: #5500f2;
+    box-shadow: 0px 0px 3px #5500f2;
+    transition: .5s;
   }
 }
+
 
 .reviews__content {
   overflow: hidden;

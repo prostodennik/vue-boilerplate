@@ -61,4 +61,14 @@
 .about__ps {
   font-style: italic;
   margin-bottom: 36px;
+  position: relative;
+
+  &::before {
+    content: "*";
+    color: #db0200;
+    font-size: 45px;
+    top: -15px;
+    left: -30px;
+    position: absolute;
+  }
 }
